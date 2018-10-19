@@ -15,7 +15,7 @@ import os
 from kubernetes import config
 from kubernetes.client.rest import ApiException
 
-# Configure API key authorization: BearerToken
+# load configuration from mounted k8s secrets
 configuration = config.load_incluster_config()
 
 # create an instance of the API class
